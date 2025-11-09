@@ -1,0 +1,107 @@
+:root {
+  --primary: #f97316;
+  --dark: #0b132b;
+  --accent: #1c2541;
+  --light: #f6f7fb;
+  --text-light: #e5e5e5;
+}
+
+/* Page Wrapper */
+.products-page {
+  font-family: "Inter", sans-serif;
+  color: var(--dark);
+  background: var(--light);
+  min-height: 100vh;
+}
+
+/* Banner (Hero Style) */
+.products-banner {
+  background: linear-gradient(135deg, var(--dark), var(--accent));
+  color: white;
+  text-align: center;
+  padding: 80px 30px 60px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.banner-content {
+  max-width: 700px;
+  margin: 0 auto;
+  animation: fadeDown 1s ease;
+}
+
+.banner-content h1 {
+  font-size: 2.6rem;
+  margin-bottom: 15px;
+  letter-spacing: 0.5px;
+}
+
+.banner-content p {
+  font-size: 1.1rem;
+  color: #ddd;
+  margin-bottom: 25px;
+  line-height: 1.6;
+}
+
+/* Toggle Button */
+.toggle-btn {
+  background: var(--primary);
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.toggle-btn:hover {
+  background: #fb923c;
+  transform: scale(1.05);
+}
+
+/* Product Grid */
+.products-container {
+  padding: 50px 80px;
+}
+
+.products-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+  animation: fadeUp 0.8s ease;
+}
+
+.no-products {
+  text-align: center;
+  font-size: 1.1rem;
+  color: #555;
+  margin-top: 20px;
+}
+
+/* Animations */
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(25px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeDown {
+  from { opacity: 0; transform: translateY(-20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .products-container {
+    padding: 30px 20px;
+  }
+
+  .banner-content h1 {
+    font-size: 2rem;
+  }
+
+  .banner-content p {
+    font-size: 1rem;
+  }
+}

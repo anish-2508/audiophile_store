@@ -1,0 +1,199 @@
+:root {
+  --primary: #f97316;
+  --dark: #0b132b;
+  --accent: #1c2541;
+  --light: #f6f7fb;
+  --text-dark: #222;
+}
+
+/* Page */
+.admin-page {
+  padding: 40px 80px;
+  background: var(--light);
+  color: var(--text-dark);
+  font-family: "Inter", sans-serif;
+  min-height: 100vh;
+}
+
+/* Title */
+.admin-page h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 40px;
+  color: var(--dark);
+}
+
+/* Form */
+.admin-form {
+  background: var(--accent);
+  border: 1px solid #ddd;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  margin-bottom: 40px;
+  transition: all 0.3s ease;
+}
+
+.admin-form h3 {
+  color: var(--primary);
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 15px;
+}
+
+.admin-form input,
+.admin-form textarea {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  font-size: 0.95rem;
+  outline: none;
+  transition: border 0.2s;
+}
+
+.admin-form input:focus,
+.admin-form textarea:focus {
+  border-color: var(--primary);
+}
+
+textarea {
+  resize: vertical;
+  min-height: 80px;
+}
+
+.admin-preview {
+  width: 100%;
+  max-width: 180px;
+  border-radius: 8px;
+  margin-top: 10px;
+  justify-self: center;
+}
+
+/* Buttons */
+.form-actions {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.form-actions button {
+  background: var(--primary);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.form-actions button:hover {
+  background: #fb923c;
+  transform: scale(1.05);
+}
+
+.cancel-btn {
+  background: #dc2626;
+}
+
+.cancel-btn:hover {
+  background: #ef4444;
+}
+
+/* Product Grid */
+.admin-products {
+  margin-top: 50px;
+}
+
+.admin-products h3 {
+  text-align: center;
+  color: var(--dark);
+  margin-bottom: 20px;
+}
+
+.admin-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(230px, 1fr));
+  gap: 25px;
+}
+
+.admin-card {
+  background: var(--accent);
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.05);
+  transition: all 0.3s;
+}
+
+.admin-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+}
+
+.admin-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.admin-info h4 {
+  margin: 6px 0;
+  font-size: 1.1rem;
+  color: var(--primary);
+}
+
+.admin-info p {
+  margin: 2px 0;
+  color: var(--light);
+}
+
+/* Card Buttons */
+.admin-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.admin-buttons button {
+  border: none;
+  border-radius: 6px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.admin-buttons .edit {
+  background: #3b82f6;
+}
+
+.admin-buttons .edit:hover {
+  background: #2563eb;
+}
+
+.admin-buttons .delete {
+  background: #ef4444;
+}
+
+.admin-buttons .delete:hover {
+  background: #dc2626;
+}
+
+.empty {
+  text-align: center;
+  color: #666;
+  margin-top: 20px;
+  font-size: 1rem;
+}
