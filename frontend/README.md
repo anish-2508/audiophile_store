@@ -61,13 +61,6 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-## MongoDB Atlas Connection
-
-Your backend uses the following MongoDB Atlas URI:
-```
-mongodb+srv://anishvirkhare7_db_user:zOSP0JRYj9y1MnQc@cluster0.cb4jb0b.mongodb.net/?appName=Cluster0
-```
-
 ## API Endpoints
 - `GET /api/products` - List all products
 - `GET /api/products/:id` - Get product by ID
