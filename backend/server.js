@@ -8,7 +8,10 @@ dotenv.config();
 
 
 const app = express();
-app.use(cors());
+app.use(cors({
+  origin: "https://audiophile-store.onrender.com", // your frontend Render URL
+  credentials: true
+}));
 app.use(express.json({ limit: "10mb" }));  // ✅ increased limit
 app.use(express.urlencoded({ limit: "10mb", extended: true }));
 
