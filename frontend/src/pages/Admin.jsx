@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import "../styles/admin.css";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://audiophile-store-backend.onrender.com/api";
 
 const Admin = () => {
   const [products, setProducts] = useState([]);

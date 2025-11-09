@@ -4,7 +4,7 @@ import ProductCard from "../components/ProductCard";
 import Admin from "./Admin";
 import "../styles/products.css";
 
-const API_BASE = "http://localhost:8000/api";
+const API_BASE = "https://audiophile-store-backend.onrender.com/api";
 
 const Products = () => {
   const [products, setProducts] = useState([]);
